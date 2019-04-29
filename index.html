@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/desktop-layout.css" />
     <link
       rel="stylesheet"
-      media="screen and (min-width: 320px) and (min-device-width: 320px)"
-      href="./assets/css/mobile-layout.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 786px) and (min-device-width: 786px)"
+      media="(max-width: 1024px) and (max-device-width: 1024px)"
       href="./assets/css/tablet-layout.css"
     />
     <link
       rel="stylesheet"
-      media="screen and (min-width: 1200px) and (min-device-width: 1200px)"
-      href="./assets/css/desktop-layout.css"
+      media="(max-width: 768px) and (max-device-width: 768px)"
+      href="./assets/css/mobile-layout.css"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Responsive Design</title>
   </head>
   <body>
     <nav></nav>
+    <div class="promo"></div>
     <header>
       <div class="gear"></div>
       <div class="tech"></div>
       <div class="world"></div>
     </header>
     <div class="latest-news">
+      <h2>Latest news <i class="fas fa-arrow"></i></h2>
       <div class="latest-news-item"></div>
       <div class="latest-news-item"></div>
       <div class="latest-news-item"></div>
@@ -40,6 +38,7 @@
       <div class="latest-news-item"></div>
     </div>
     <div class="latest-funding">
+      <h2>Latest funding rounds on Index.co <i class="fas fa-arrow"></i></h2>
       <div class="funding-menu"></div>
       <div class="funded-partners"></div>
       <div class="funded-partners"></div>
@@ -57,6 +56,10 @@
       <div class="services-item"></div>
     </div>
     <div class="latest-deals">
+      <div class="latest-deals-header">
+        <h2>Latest deals <i class="fas fa-arrow"></i></h2>
+        <a href="#">See all Deals</a>
+      </div>
       <div class="latest-deals-item"></div>
       <div class="latest-deals-item"></div>
       <div class="latest-deals-item"></div>

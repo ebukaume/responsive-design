@@ -1,3 +1,73 @@
 body {
   background: blue;
 }
+nav {
+  height: 20px;
+  background: green;
+}
+.promo {
+  height: 5px;
+  background: yellowgreen;
+}
+header {
+  display: grid;
+  grid-template-columns: minmax(1fr, 100%);
+}
+.tech,
+.gear,
+.world {
+  height: 30px;
+  margin: 0 5px;
+  background: grey;
+}
+.tech {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.latest-news {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(minmax(90%, 1fr));
+}
+.latest-news-item {
+  height: 20px;
+  background: red;
+}
+
+.latest-funding {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(minmax(90%, 1fr));
+}
+.funded-partners {
+  height: 20px;
+  background: purple;
+}
+
+.services {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(minmax(90%, 1fr));
+}
+.services-item {
+  height: 50px;
+  background: yellow;
+}
+
+.latest-deals {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(minmax(90%, 1fr));
+}
+.latest-deals-item {
+  height: 20px;
+  background: brown;
+}
+footer .social-media {
+  height: 60px;
+  background: #111;
+}
+footer .copyright {
+  height: 50px;
+  background: #000;
+}
