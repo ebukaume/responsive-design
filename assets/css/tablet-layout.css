@@ -20,19 +20,74 @@ header{
 .gear{
   grid-area: gear;
   height: 320px;
-  background: goldenrod;
   margin-top: 1%;
+  background-image: url('../images/upper_images/gear.png');
+  background-position: center bottom;
 }
 .tech{
   height: 155.5px;
-  background: goldenrod;
   grid-area: tech;
-  
+  background-image: url('../images/upper_images/tech.png');
+  background-position: center;
 }
 .world{ 
   height: 155.5px;
-  background: goldenrod;
   grid-area: world;
+  background-image: url('../images/upper_images/world.png');
+  background-position: center;
+}
+
+
+.gear >h2,h3,span{
+  color: white;
+  margin-left: 2%;
+}
+.tech>h2,h3,span{
+  color: white;
+  margin-left: 2%;
+}
+.world >h2,h3,span{
+  color: white;
+  padding-left: 2%;
+}
+.gear >span{
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.gear >h2{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.gear >h3{
+  margin-top: 25%;
+  font-size: 1.8rem;
+  opacity: 0.9;
+}
+.tech >h2{
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.tech >h3{
+  font-size: 0.9rem;
+  margin-top: 10%;
+}
+.tech span{
+  font-size: 0.6rem;
+}
+
+
+.world >h2{
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.world >h3{
+  font-size: 0.9rem;
+  margin-top: 10%;
+}
+.world span{
+  font-size: 0.6rem;
 }
 
 .latest-news{
@@ -40,16 +95,30 @@ header{
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  margin-top: 2.5%;
+  grid-area:
+      "img        img        img"
+      ".        .        ."
+      "headline headline headline";
   padding: 2%;
 }
 
 .latest-news-item{
   width: 100%;
   height: 204px;
-  background-color: gold;
  }
- 
+.img{
+  grid-area: img;
+  width: 100%;
+  height: 135px;
+}
+img[alt="latest"]{
+  width: 100%;
+  height: 100%;
+}
+.headline{
+  grid-area: headline;
+  margin-top: 65%;
+}
 .latest-funding{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -58,16 +127,41 @@ header{
   margin-top: 2.5%;
   padding: 2%;
 }
+.funding-menu a:hover{
+color: #000;
+} 
 .funded-partners{
   width: 100%;
-  height: 300px;
-  background: greenyellow;
+  height: 100%;
  }
- 
+ .funded-partners h4{
+  margin-left:32%;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: white;
+ }
+ .funded-partners h5{
+  margin-left:32%;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: black;
+ }
+ .funded-partners p{
+  margin-left: 6%;
+  padding-top: 3.5%;
+  font-size: 0.75rem;
+  color: #666;
+ }
+ .funded-partners p:last-child{
+  margin-left: 1%;
+  padding-top: 2%;
+  font-size: 0.70rem;
+  color: #666;
+ }
  .funded-partners:last-of-type{
   display: none;
 }
-
+/* demarcation */
 .services{
   display: grid;
   grid-template-columns: 1fr 1fr;
