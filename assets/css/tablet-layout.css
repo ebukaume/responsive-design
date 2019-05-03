@@ -38,6 +38,12 @@ nav {
   text-transform: capitalize;
   font-size: 12px;
 }
+.title {
+  color: #f42;
+  padding-top:5%;
+  padding-bottom: 0%;
+  padding-left: 1%;
+}
 
 .top-link-two {
   grid-area: top-link-two;
@@ -244,6 +250,7 @@ span {
 .latest-news-item {
   width: 100%;
   height: 204px;
+  margin-top: 8%;
 }
 .img {
   grid-area: img;
@@ -271,7 +278,6 @@ img[alt="latest"] {
 }
 .funded-partners {
   width: 100%;
-  height: 100%;
 }
 .funded-partners h4 {
   margin-left: 32%;
@@ -287,7 +293,7 @@ img[alt="latest"] {
 }
 .funded-partners p {
   margin-left: 6%;
-  padding-top: 3.5%;
+  padding: 3.5%;
   font-size: 0.75rem;
   color: #666;
 }
