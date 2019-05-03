@@ -1,12 +1,156 @@
 nav{
+  display: grid;
+  grid-template-columns: 1.5fr 8fr 1fr 4.5fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "brandname    nav-top     nav-top nav-top" 
+  "brandname nav-bar searcher search-and-time"
+  "promo     promo      promo  promo";
+}
+.brandname{
+  grid-area: brandname;
   width: 100%;
-  height: 80px;
-  background:black;
+  height: 75px;
+  background: red;
+}
+.brandname >h1{
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  color: white;
+  font-weight: bolder;
+}
+.nav-top{
+    grid-area: nav-top;
+    width: 100%;
+    height: 35px;
+    background:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 6fr ;
+    grid-template-rows: auto auto auto auto auto ;
+    grid-template-areas: 
+    "top-link-one top-link-two top-link-three top-link-four top-link-five";
+}
+.top-link-one{
+  grid-area: top-link-one;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.top-link-two{
+  grid-area: top-link-two;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.top-link-three{
+  grid-area: top-link-three;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
+.top-link-four{
+  margin-top: 10px;
+  grid-area: top-link-four;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+
+.top-link-five{
+  margin-top: 10px;
+  grid-area: top-link-five;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.nav-top a{
+  color: white;
+  padding: 0;
+  margin-top: 5%;
+}
+.nav-bar{
+  grid-area: nav-bar;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+  "nav-link-one nav-link-two nav-link-three nav-link-four nav-link-five";
+}
+.nav-bar a{
+  visibility:visible;
+  position: absolute;
+  margin-left: 2.5%;
+  margin-top: 10px;
+  color: silver;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.nav-link-one{
+  grid-area: nav-link-one;
+  height: 40px;
+}
+
+.nav-link-two{
+  grid-area: nav-link-two;
+  height: 40px;
+}
+
+.nav-link-three{
+  grid-area: nav-link-three;
+  height: 40px;
+  margin-left: 15%;
+}
+
+
+.nav-link-four{
+  grid-area: nav-link-four;
+  height: 40px;
+  margin-left: 15%;
+}
+
+
+.nav-link-five{
+  grid-area: nav-link-five;
+  height: 40px;
+  margin-left: 15%;
+}
+.search-and-time{
+  grid-area: search-and-time;
+  height: 40px;
+}
+.search-and-time >strong{
+  color: #f24;
+  margin-left: 8%;
+}
+.fa-bars{
+  color: #f24;
+  margin-top: 2.2%;
+  margin-left: 5%;
+}
+.fa-search{
+  color: silver;
+  margin:  17% 0% 0% 25%;
+}
+.searcher{
+  grid-area: searcher;
 }
 .promo{
+  grid-area: promo;
   width: 100%;
   height:30px;
-  background: gold; 
+  background:gold; 
 }
 header{
   display: grid;
@@ -97,7 +241,6 @@ header{
   grid-gap: 10px;
   grid-area:
       "img        img        img"
-      ".        .        ."
       "headline headline headline";
   padding: 2%;
 }
