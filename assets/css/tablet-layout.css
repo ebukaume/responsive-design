@@ -288,6 +288,11 @@ img[alt="latest"] {
   margin-top: 2.5%;
   padding: 2%;
 }
+
+.funding-menu a {
+  border-right: 1px solid #f24;
+  padding-right: 5%;
+ }
 .funding-menu a:hover {
   color: #000;
 }
