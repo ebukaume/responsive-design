@@ -1,13 +1,13 @@
 .services,
 .latest-deals,
 .latest-deals-header {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 100%;
+  margin: 0 auto; */
 }
 nav {
   width: 100%;
 }
-.brandname{
+.brandname {
   display: none;
 }
 .tech,.world,.gear h2{
@@ -36,7 +36,7 @@ margin-left:70%;
 }
 nav {
   display: grid;
-  grid-template-columns:  8fr 1fr 4.5fr;
+  grid-template-columns: 8fr 1fr 4.5fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "    nav-top     nav-top nav-top"
@@ -44,24 +44,24 @@ nav {
     "   promo      promo  promo";
 }
 
-.promo{
+.promo {
   margin-bottom: 0;
 }
-button{
+button {
   border: 0;
   background: #0cc;
   color: white;
   font-weight: 700;
-  border-radius:3px;
+  border-radius: 3px;
   text-transform: uppercase;
   cursor: pointer;
   position: absolute;
   margin-top: 8px;
   padding: 5px;
   margin-left: 10px;
-  visibility:visible; 
+  visibility: visible;
 }
-button:hover{
+button:hover {
   background: rgb(95, 17, 95);
 }
 .gear {
@@ -83,14 +83,14 @@ button:hover{
   background-image: url("../images/upper_images/world.png");
   background-position: center;
 }
-.title{
+.title {
   padding-top: 3%;
   padding-bottom: 0;
 }
 .latest-news-item {
   width: 100%;
-  height:auto;
-  margin-top:0;
+  height: auto;
+  margin-top: 0;
 }
 
 .latest-funding {
@@ -101,13 +101,13 @@ button:hover{
   grid-template-rows: auto auto auto auto;
   grid-gap: 10px;
   margin-top: 2.5%;
-  padding: 2%; 
+  padding: 2%;
 }
 .funded-partners:last-of-type {
   display: block;
 }
-.m{
-  border-right:1px solid #f24;
+.m {
+  border-right: 1px solid #f24;
   margin-left: 3%;
   padding-right: 2.5%;
 }
@@ -119,7 +119,8 @@ button:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  grid-area: "img        img        img img"  "headline headline headline headline";
+  grid-area: "img        img        img img"
+    "headline headline headline headline";
 }
 
 .latest-news-item {
