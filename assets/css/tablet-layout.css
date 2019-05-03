@@ -1,3 +1,7 @@
+.latest-deals,
+.latest-deals-header {
+  width: 90%;
+}
 nav {
   display: grid;
   grid-template-columns: 1.5fr 8fr 1fr 4.5fr;
@@ -90,7 +94,7 @@ nav {
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "nav-link-one nav-link-two nav-link-three nav-link-four nav-link-five";
 }
-button{
+button {
   visibility: hidden;
 }
 .nav-bar a {
@@ -232,7 +236,12 @@ span {
   font-size: 1.1rem;
   font-weight: bolder;
 }
-.headline,.funded-partners,img,.gear,.world,.tech:hover{
+.headline,
+.funded-partners,
+img,
+.gear,
+.world,
+.tech:hover {
   cursor: pointer;
 }
 
@@ -249,7 +258,7 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  grid-area: "img        img        img"  "headline headline headline";
+  grid-area: "img        img        img" "headline headline headline";
   padding: 2%;
 }
 
@@ -329,7 +338,7 @@ img[alt="latest"] {
 } */
 .latest-deals {
   margin: 0 auto;
-  height:100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;

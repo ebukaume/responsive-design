@@ -1,8 +1,6 @@
-.services,
 .latest-deals,
 .latest-deals-header {
-  /* width: 100%;
-  margin: 0 auto; */
+  width: 90%;
 }
 nav {
   width: 100%;
@@ -10,11 +8,13 @@ nav {
 .brandname {
   display: none;
 }
-.tech,.world,.gear h2{
+.tech,
+.world,
+.gear h2 {
   text-shadow: 2px 2px 4px #000000;
 }
-.funding-menu{
-margin-left:70%;
+.funding-menu {
+  margin-left: 70%;
 }
 .services {
   margin-top: -30px;
@@ -111,7 +111,12 @@ button:hover {
   margin-left: 3%;
   padding-right: 2.5%;
 }
-.headline,.funded-partners,img,.gear,.world,.tech:hover{
+.headline,
+.funded-partners,
+img,
+.gear,
+.world,
+.tech:hover {
   cursor: pointer;
 }
 .latest-news {
