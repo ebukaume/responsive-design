@@ -232,6 +232,9 @@ span {
   font-size: 1.1rem;
   font-weight: bolder;
 }
+.headline,.funded-partners,img,.gear,.world,.tech:hover{
+  cursor: pointer;
+}
 
 .world > h3 {
   font-size: 0.9rem;

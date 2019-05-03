@@ -111,7 +111,9 @@ button:hover {
   margin-left: 3%;
   padding-right: 2.5%;
 }
-
+.headline,.funded-partners,img,.gear,.world,.tech:hover{
+  cursor: pointer;
+}
 .latest-news {
   width: 94%;
   margin: 0 auto;

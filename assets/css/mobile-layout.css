@@ -214,6 +214,9 @@ img[alt="funding_banner"] {
   height: 50px;
   background-color: #f42;
 }
+.headline,.funded-partners,img,.gear,.world,.tech:hover{
+  cursor: pointer;
+}
 .funded-partners h4 {
   margin-left: 20%;
   padding-top: 3.5%;
