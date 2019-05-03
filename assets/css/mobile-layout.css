@@ -277,15 +277,14 @@ img[device="tablet"] {
 .latest-deals-item .deal-details {
   margin: 2px 10px;
 }
-footer .social-media {
-  height: 60px;
-  background: #111;
-}
-footer .copyright {
-  height: 50px;
-  background: #000;
-}
 .services,
 .latest-deals {
   margin: 0 20px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }
