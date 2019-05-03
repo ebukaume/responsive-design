@@ -27,7 +27,7 @@ $ cd responsive-design
 
 ## Deployment
 
-The demo page can be found [HERE](https://raw.githack.com/ebukaume/responsive-design/dev/index.html)
+The demo page can be found [HERE](https://ebukaume.github.io/responsive-design/)
 
 ## Contributors
 
