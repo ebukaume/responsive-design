@@ -93,6 +93,10 @@ body {
   color: #f42;
   text-decoration: none;
 }
+
+.latest-deals-header a:hover {
+  color: #000;
+}
 .latest-deals {
   margin: 0 20px;
 }
