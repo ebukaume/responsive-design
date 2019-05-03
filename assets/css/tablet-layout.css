@@ -1,0 +1,376 @@
+.latest-deals,
+.latest-deals-header {
+  width: 90%;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 8fr 1fr 4.5fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "brandname    nav-top     nav-top nav-top"
+    "brandname nav-bar searcher search-and-time"
+    "promo     promo      promo  promo";
+}
+.brandname {
+  grid-area: brandname;
+  width: 100%;
+  height: 75px;
+  background: red;
+}
+.brandname > h1 {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  color: white;
+  font-weight: bolder;
+}
+.nav-top {
+  grid-area: nav-top;
+  width: 100%;
+  height: 35px;
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 16fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "top-link-one top-link-two top-link-three top-link-four top-link-five";
+}
+.top-link-one {
+  grid-area: top-link-one;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.title {
+  color: #f42;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  padding-left: 1%;
+}
+
+.top-link-two {
+  grid-area: top-link-two;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.top-link-three {
+  grid-area: top-link-three;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.top-link-four {
+  margin-top: 10px;
+  grid-area: top-link-four;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.top-link-five {
+  margin-top: 10px;
+  grid-area: top-link-five;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.nav-top a {
+  color: white;
+  padding: 0;
+  margin-top: 5%;
+}
+.nav-bar {
+  grid-area: nav-bar;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav-link-one nav-link-two nav-link-three nav-link-four nav-link-five";
+}
+button {
+  visibility: hidden;
+}
+.nav-bar a {
+  visibility: visible;
+  position: absolute;
+  margin-left: 2.5%;
+  margin-top: 10px;
+  color: silver;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.nav-link-one {
+  grid-area: nav-link-one;
+  height: 40px;
+}
+
+.nav-link-two {
+  grid-area: nav-link-two;
+  height: 40px;
+}
+
+.nav-link-three {
+  grid-area: nav-link-three;
+  height: 40px;
+  margin-left: 15%;
+}
+
+.nav-link-four {
+  grid-area: nav-link-four;
+  height: 40px;
+  margin-left: 15%;
+}
+
+.nav-link-five {
+  grid-area: nav-link-five;
+  height: 40px;
+  margin-left: 15%;
+}
+.search-and-time {
+  grid-area: search-and-time;
+  height: 40px;
+}
+.search-and-time > strong {
+  color: #f24;
+  margin-left: 8%;
+}
+.fa-bars {
+  color: #f24;
+  margin-top: 2.2%;
+  margin-left: 5%;
+}
+.fa-search {
+  color: silver;
+  margin: 17% 0% 0% 25%;
+}
+.searcher {
+  grid-area: searcher;
+}
+.promo {
+  grid-area: promo;
+  width: 100%;
+  height: 30px;
+  background: gold;
+}
+header {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "gear tech"
+    "gear world";
+}
+.gear {
+  grid-area: gear;
+  height: 320px;
+  margin-top: 1%;
+  background-image: url("../images/upper_images/gear.png");
+  background-position: center bottom;
+}
+.tech {
+  height: 155.5px;
+  grid-area: tech;
+  background-image: url("../images/upper_images/tech.png");
+  background-position: center;
+}
+.world {
+  height: 155.5px;
+  grid-area: world;
+  background-image: url("../images/upper_images/world.png");
+  background-position: center;
+}
+
+.gear > h2,
+h3,
+span {
+  color: white;
+  margin-left: 2%;
+}
+.tech > h2,
+h3,
+span {
+  color: white;
+  margin-left: 2%;
+}
+.world > h2,
+h3,
+span {
+  color: white;
+  padding-left: 2%;
+}
+.gear > span {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.gear > h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.gear > h3 {
+  margin-top: 25%;
+  font-size: 1.8rem;
+  opacity: 0.9;
+}
+.tech > h2 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.tech > h3 {
+  font-size: 0.9rem;
+  margin-top: 10%;
+}
+.tech span {
+  font-size: 0.6rem;
+}
+
+.world > h2 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.headline,
+.funded-partners,
+img,
+.gear,
+.world,
+.tech:hover {
+  cursor: pointer;
+}
+
+.world > h3 {
+  font-size: 0.9rem;
+  margin-top: 10%;
+}
+.world span {
+  font-size: 0.6rem;
+}
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-area: "img        img        img" "headline headline headline";
+  padding: 2%;
+}
+
+.latest-news-item {
+  width: 100%;
+  height: 204px;
+  margin-top: 8%;
+}
+.img {
+  grid-area: img;
+  width: 100%;
+  height: 135px;
+}
+img[alt="latest"] {
+  width: 100%;
+  height: 100%;
+}
+.headline {
+  grid-area: headline;
+  margin-top: 65%;
+}
+.latest-funding {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  margin-top: 2.5%;
+  padding: 2%;
+}
+
+.funding-menu a {
+  border-right: 1px solid #f24;
+  padding-right: 5%;
+}
+.funding-menu a:hover {
+  color: #000;
+}
+.funded-partners {
+  width: 100%;
+}
+.funded-partners h4 {
+  margin-left: 32%;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: white;
+}
+.funded-partners h5 {
+  margin-left: 32%;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: black;
+}
+.funded-partners p {
+  margin-left: 6%;
+  padding: 3.5%;
+  font-size: 0.75rem;
+  color: #666;
+}
+.funded-partners p:last-child {
+  margin-left: 1%;
+  padding-top: 2%;
+  font-size: 0.7rem;
+  color: #666;
+}
+.funded-partners:last-of-type {
+  display: none;
+}
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  margin-top: 0.5%;
+  padding: 2%;
+}
+.latest-deals {
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+.latest-deals-item {
+  display: flex;
+  flex-direction: column;
+}
+img[src*="tablet"] {
+  display: block;
+}
+img[src*="mobile"] {
+  display: none;
+}
+.deal-details h4 {
+  margin-top: 5px;
+}
+h2 {
+  margin-left: 5%;
+  padding: 1%;
+}
+.copyright {
+  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.copyright span:nth-of-type(2) {
+  margin: 6px -25px 0 -9px;
+}
+
+.copyright span + span {
+  margin-top: 5px;
+}

@@ -1,0 +1,174 @@
+body {
+  font-family: sans-serif;
+}
+.services-item h2,
+.latest-deals-header h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.services-item h2 a,
+.latest-deals-header h2 a {
+  color: #f42;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.services-item h2 a:hover,
+.latest-deals-header h2 a:hover {
+  color: #000;
+}
+.article {
+  height: 275px;
+  background-image: url("../images/service-1.png");
+  background-size: cover;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.article > * {
+  padding: 0 10px 5px 10px;
+}
+.services-item .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #f42;
+}
+.article .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #eee;
+}
+.byline {
+  font-size: 11px;
+}
+.sub-article {
+  background: #fff4f3;
+  display: grid;
+  grid-template-rows: 97px;
+  grid-template-columns: 13fr 1fr;
+  color: #f42;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.sub-article span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #f42;
+}
+.sub-image > img {
+  width: 100%;
+}
+.sub-article div:first-of-type {
+  margin: 15px;
+}
+.services-item li {
+  color: #555;
+  display: block;
+  padding: 6px 0 6px 14px;
+  font-size: 13px;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 20px;
+}
+.services-item li::before {
+  content: "\2022";
+  color: orangered;
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+.latest-deals-header {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-deals-header a {
+  align-self: flex-end;
+  margin-right: 10px;
+  color: #f42;
+  text-decoration: none;
+}
+
+.latest-deals-header a:hover {
+  color: #000;
+}
+.latest-deals {
+  margin: 0 20px;
+}
+.deal-details h4 {
+  font-weight: 600;
+  cursor: pointer;
+}
+.deal-details h4:hover {
+  color: #f42;
+}
+.deal-price .old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.deal-price .new-price {
+  color: #555;
+  font-size: 14px;
+}
+.heart {
+  color: #9b0808;
+}
+footer {
+  margin-top: 25px;
+  color: #aaa;
+}
+.top {
+  height: 150px;
+  padding-top: 8px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  text-align: center;
+  padding-top: 15px;
+}
+.social-media i {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.other-links {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 13px;
+}
+.other-links span {
+  margin: 0 -7px;
+  cursor: pointer;
+}
+.other-links span a {
+  text-decoration: none;
+  color: #aaa;
+}
+.other-links span a:hover {
+  color: #ffffff;
+}
+.copyright {
+  height: 80px;
+  background-color: #000;
+}
+img {
+  cursor: pointer;
+}
