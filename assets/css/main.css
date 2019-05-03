@@ -14,7 +14,10 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
+.services-item h2 a:hover,
+.latest-deals-header h2 a:hover {
+  color: #000;
+}
 .article {
   height: 275px;
   background-image: url("../images/service-1.png");
@@ -90,8 +93,15 @@ body {
   color: #f42;
   text-decoration: none;
 }
+.latest-deals {
+  margin: 0 20px;
+}
 .deal-details h4 {
   font-weight: 600;
+  cursor: pointer;
+}
+.deal-details h4:hover {
+  color: #f42;
 }
 .deal-price .old-price {
   text-decoration: line-through;
@@ -134,11 +144,12 @@ footer {
 }
 .other-links {
   width: 100%;
-  margin: auto;
+  margin: 20px auto;
   text-align: center;
   font-size: 13px;
 }
 .other-links span {
+  margin: 0 -7px;
   cursor: pointer;
 }
 .other-links span a {
@@ -151,4 +162,7 @@ footer {
 .copyright {
   height: 80px;
   background-color: #000;
+}
+img {
+  cursor: pointer;
 }
