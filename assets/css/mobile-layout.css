@@ -44,6 +44,9 @@ nav {
   font-size: 1.2rem;
   margin: 5%;
 }
+button{
+  visibility: hidden;
+}
 .fa-bars {
   color: #f24;
   margin-top: 5%;
