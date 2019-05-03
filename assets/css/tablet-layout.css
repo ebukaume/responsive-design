@@ -292,7 +292,7 @@ img[alt="latest"] {
 .funding-menu a {
   border-right: 1px solid #f24;
   padding-right: 5%;
- }
+}
 .funding-menu a:hover {
   color: #000;
 }
@@ -353,10 +353,10 @@ img[alt="latest"] {
   display: flex;
   flex-direction: column;
 }
-img[device="tablet"] {
+img[src*="tablet"] {
   display: block;
 }
-img[device="mobile"] {
+img[src*="mobile"] {
   display: none;
 }
 .deal-details h4 {
