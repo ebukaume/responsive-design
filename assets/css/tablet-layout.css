@@ -1,37 +1,36 @@
-nav{
+nav {
   display: grid;
   grid-template-columns: 1.5fr 8fr 1fr 4.5fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
-  "brandname    nav-top     nav-top nav-top" 
-  "brandname nav-bar searcher search-and-time"
-  "promo     promo      promo  promo";
+    "brandname    nav-top     nav-top nav-top"
+    "brandname nav-bar searcher search-and-time"
+    "promo     promo      promo  promo";
 }
-.brandname{
+.brandname {
   grid-area: brandname;
   width: 100%;
   height: 75px;
   background: red;
 }
-.brandname >h1{
+.brandname > h1 {
   position: absolute;
   top: 5%;
   left: 2.5%;
   color: white;
   font-weight: bolder;
 }
-.nav-top{
-    grid-area: nav-top;
-    width: 100%;
-    height: 35px;
-    background:black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 6fr ;
-    grid-template-rows: auto auto auto auto auto ;
-    grid-template-areas: 
-    "top-link-one top-link-two top-link-three top-link-four top-link-five";
+.nav-top {
+  grid-area: nav-top;
+  width: 100%;
+  height: 35px;
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 6fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "top-link-one top-link-two top-link-three top-link-four top-link-five";
 }
-.top-link-one{
+.top-link-one {
   grid-area: top-link-one;
   position: absolute;
   margin-left: 10px;
@@ -40,7 +39,7 @@ nav{
   font-size: 12px;
 }
 
-.top-link-two{
+.top-link-two {
   grid-area: top-link-two;
   margin-left: 5px;
   margin-top: 10px;
@@ -48,7 +47,7 @@ nav{
   font-size: 12px;
 }
 
-.top-link-three{
+.top-link-three {
   grid-area: top-link-three;
   margin-left: 5px;
   text-transform: capitalize;
@@ -56,8 +55,7 @@ nav{
   margin-top: 10px;
 }
 
-
-.top-link-four{
+.top-link-four {
   margin-top: 10px;
   grid-area: top-link-four;
   margin-left: 5px;
@@ -65,31 +63,29 @@ nav{
   font-size: 12px;
 }
 
-
-.top-link-five{
+.top-link-five {
   margin-top: 10px;
   grid-area: top-link-five;
   margin-left: 5px;
   text-transform: capitalize;
   font-size: 12px;
 }
-.nav-top a{
+.nav-top a {
   color: white;
   padding: 0;
   margin-top: 5%;
 }
-.nav-bar{
+.nav-bar {
   grid-area: nav-bar;
   width: 100%;
   height: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 
-  "nav-link-one nav-link-two nav-link-three nav-link-four nav-link-five";
+  grid-template-areas: "nav-link-one nav-link-two nav-link-three nav-link-four nav-link-five";
 }
-.nav-bar a{
-  visibility:visible;
+.nav-bar a {
+  visibility: visible;
   position: absolute;
   margin-left: 2.5%;
   margin-top: 10px;
@@ -97,254 +93,261 @@ nav{
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-.nav-link-one{
+.nav-link-one {
   grid-area: nav-link-one;
   height: 40px;
 }
 
-.nav-link-two{
+.nav-link-two {
   grid-area: nav-link-two;
   height: 40px;
 }
 
-.nav-link-three{
+.nav-link-three {
   grid-area: nav-link-three;
   height: 40px;
   margin-left: 15%;
 }
 
-
-.nav-link-four{
+.nav-link-four {
   grid-area: nav-link-four;
   height: 40px;
   margin-left: 15%;
 }
 
-
-.nav-link-five{
+.nav-link-five {
   grid-area: nav-link-five;
   height: 40px;
   margin-left: 15%;
 }
-.search-and-time{
+.search-and-time {
   grid-area: search-and-time;
   height: 40px;
 }
-.search-and-time >strong{
+.search-and-time > strong {
   color: #f24;
   margin-left: 8%;
 }
-.fa-bars{
+.fa-bars {
   color: #f24;
   margin-top: 2.2%;
   margin-left: 5%;
 }
-.fa-search{
+.fa-search {
   color: silver;
-  margin:  17% 0% 0% 25%;
+  margin: 17% 0% 0% 25%;
 }
-.searcher{
+.searcher {
   grid-area: searcher;
 }
-.promo{
+.promo {
   grid-area: promo;
   width: 100%;
-  height:30px;
-  background:gold; 
+  height: 30px;
+  background: gold;
 }
-header{
+header {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: auto auto;
   grid-template-areas:
-       "gear tech"
-       "gear world";
+    "gear tech"
+    "gear world";
 }
-.gear{
+.gear {
   grid-area: gear;
   height: 320px;
   margin-top: 1%;
-  background-image: url('../images/upper_images/gear.png');
+  background-image: url("../images/upper_images/gear.png");
   background-position: center bottom;
 }
-.tech{
+.tech {
   height: 155.5px;
   grid-area: tech;
-  background-image: url('../images/upper_images/tech.png');
+  background-image: url("../images/upper_images/tech.png");
   background-position: center;
 }
-.world{ 
+.world {
   height: 155.5px;
   grid-area: world;
-  background-image: url('../images/upper_images/world.png');
+  background-image: url("../images/upper_images/world.png");
   background-position: center;
 }
 
-
-.gear >h2,h3,span{
+.gear > h2,
+h3,
+span {
   color: white;
   margin-left: 2%;
 }
-.tech>h2,h3,span{
+.tech > h2,
+h3,
+span {
   color: white;
   margin-left: 2%;
 }
-.world >h2,h3,span{
+.world > h2,
+h3,
+span {
   color: white;
   padding-left: 2%;
 }
-.gear >span{
+.gear > span {
   font-size: 1rem;
   opacity: 0.7;
 }
-.gear >h2{
+.gear > h2 {
   font-size: 2rem;
   font-weight: bolder;
 }
-.gear >h3{
+.gear > h3 {
   margin-top: 25%;
   font-size: 1.8rem;
   opacity: 0.9;
 }
-.tech >h2{
+.tech > h2 {
   font-size: 1.1rem;
   font-weight: bolder;
 }
 
-.tech >h3{
+.tech > h3 {
   font-size: 0.9rem;
   margin-top: 10%;
 }
-.tech span{
+.tech span {
   font-size: 0.6rem;
 }
 
-
-.world >h2{
+.world > h2 {
   font-size: 1.1rem;
   font-weight: bolder;
 }
 
-.world >h3{
+.world > h3 {
   font-size: 0.9rem;
   margin-top: 10%;
 }
-.world span{
+.world span {
   font-size: 0.6rem;
 }
 
-.latest-news{
+.latest-news {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  grid-area:
-      "img        img        img"
-      "headline headline headline";
+  grid-area: "img        img        img" "headline headline headline";
   padding: 2%;
 }
 
-.latest-news-item{
+.latest-news-item {
   width: 100%;
   height: 204px;
- }
-.img{
+}
+.img {
   grid-area: img;
   width: 100%;
   height: 135px;
 }
-img[alt="latest"]{
+img[alt="latest"] {
   width: 100%;
   height: 100%;
 }
-.headline{
+.headline {
   grid-area: headline;
   margin-top: 65%;
 }
-.latest-funding{
+.latest-funding {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
   margin-top: 2.5%;
   padding: 2%;
 }
-.funding-menu a:hover{
-color: #000;
-} 
-.funded-partners{
+.funding-menu a:hover {
+  color: #000;
+}
+.funded-partners {
   width: 100%;
   height: 100%;
- }
- .funded-partners h4{
-  margin-left:32%;
+}
+.funded-partners h4 {
+  margin-left: 32%;
   font-size: 0.9rem;
   font-weight: bolder;
   color: white;
- }
- .funded-partners h5{
-  margin-left:32%;
+}
+.funded-partners h5 {
+  margin-left: 32%;
   font-size: 1rem;
   font-weight: bolder;
   color: black;
- }
- .funded-partners p{
+}
+.funded-partners p {
   margin-left: 6%;
   padding-top: 3.5%;
   font-size: 0.75rem;
   color: #666;
- }
- .funded-partners p:last-child{
+}
+.funded-partners p:last-child {
   margin-left: 1%;
   padding-top: 2%;
-  font-size: 0.70rem;
+  font-size: 0.7rem;
   color: #666;
- }
- .funded-partners:last-of-type{
+}
+.funded-partners:last-of-type {
   display: none;
 }
 /* demarcation */
-.services{
+
+.services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:  auto auto;
+  grid-template-rows: auto auto;
   grid-gap: 10px;
   margin-top: 0.5%;
   padding: 2%;
- }
-.services-item{
+}
+/* .services-item {
   width: 100%;
   height: 300px;
-  background-color:violet;
- }
-.latest-deals{
-  width: 100%;
+  background-color: violet;
+} */
+.latest-deals {
   height: auto;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
   grid-gap: 10px;
 }
-.latest-deals-item{
-  width: 100%;
-  height: 300px;
-  background-color:brown;
+.latest-deals-item {
+  display: flex;
+  flex-direction: column;
 }
-
-footer{
+img[device="tablet"] {
+  display: block;
+}
+img[device="mobile"] {
+  display: none;
+}
+.deal-details h4 {
+  margin-top: 5px;
+}
+footer {
   width: 100%;
 }
-.social-media{
+.social-media {
   width: 100%;
   height: 180px;
 }
-.copyright{
+.copyright {
   width: 100%;
   height: 150px;
   background: red;
 }
-h2{
+h2 {
   margin-left: 5%;
   padding: 1%;
 }
