@@ -10,7 +10,12 @@ nav {
 .brandname{
   display: none;
 }
-
+.tech,.world,.gear h2{
+  text-shadow: 2px 2px 4px #000000;
+}
+.funding-menu{
+margin-left:70%;
+}
 .services {
   margin-top: -30px;
   display: grid;
